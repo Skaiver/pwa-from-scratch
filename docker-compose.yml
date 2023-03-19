@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    image: webdevops/php-apache:8.0
+    ports:
+      - 8081:80
+    volumes:
+      - .:/var/www
+    environment:
+      WEB_DOCUMENT_ROOT: /var/www/web
